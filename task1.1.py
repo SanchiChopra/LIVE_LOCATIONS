@@ -3,7 +3,6 @@ import turtle
 import urllib.request
 import time
 
-# Don't need to make a tkinter window
 # tutle.Screen create the output
 url = 'http://api.open-notify.org/astros.json'
 response = urllib.request.urlopen(url)
@@ -28,7 +27,7 @@ print('Longitude:',lon)
 
 
 # Creating output Screen
-# screen <- Screen object
+
 screen=turtle.Screen()
 screen.setup(720,360)
 screen.setworldcoordinates(-180,-90,180,90)
